@@ -1,0 +1,4 @@
+laya[serve]
+fastapi
+uvicorn
+httpx[http2]

@@ -1,0 +1,12 @@
+# secrets
+.env
+# local environments and caches
+.venv*/
+__pycache__/
+# local data: results, backups, logs
+*.db
+*.log
+# local-only helpers and drafts
+.after_download.sh
+x-post.txt
+.DS_Store

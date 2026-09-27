@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jev vs Laya Arena</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="/static/style.css?v=1790513324">
+</head>
+<body>
+<div class="app">
+  <nav class="ribbon" aria-label="Quick actions">
+    <button id="rb-sim" title="Open the battleground" aria-label="Open the battleground"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M4 2.5v11l9-5.5-9-5.5Z"/></svg></button>
+    <button id="rb-score" title="Open scoreboard" aria-label="Open scoreboard"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 14V8m4 6V3m4 11V6m4 8V10"/></svg></button>
+    <button id="rb-warm" title="Warm up models" aria-label="Warm up models"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 1 3 9h5l-1 6 6-8H8l1-6Z"/></svg></button>
+    <button id="rb-reset" title="Clear all results" aria-label="Clear all results"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 4h10M6 4V2h4v2m-6 0 1 10h6l1-10"/></svg></button>
+  </nav>
+
+  <aside class="vault" aria-label="Vault">
+    <div class="vault-head"><span>jev-vs-laya</span><span class="hint" id="vault-count"></span></div>
+    <div id="notes"></div>
+    <div class="folder">contenders</div>
+    <div class="contenders" id="contenders"></div>
+  </aside>
+
+  <main class="workspace">
+    <div class="tabs" role="tablist" id="tabs"></div>
+    <div class="editor" id="editor"><div class="doc" id="doc"></div></div>
+  </main>
+
+  <aside class="panel" id="panel" aria-label="Round detail"></aside>
+
+  <footer class="statusbar" id="statusbar">
+    <span class="left" id="sb-left">ready</span>
+  </footer>
+</div>
+<div class="tooltip" id="tip" hidden></div>
+<script src="/static/app.js?v=1790513324"></script>
+<script src="/static/sim.js?v=1790513324"></script>
+</body>
+</html>
