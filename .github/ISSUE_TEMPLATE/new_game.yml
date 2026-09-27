@@ -1,0 +1,22 @@
+name: New game idea
+description: Propose a new round type for the battleground
+labels: [enhancement, new-game]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would the game test?
+      placeholder: e.g. sarcasm detection, legal clause classification, code-review triage
+    validations:
+      required: true
+  - type: textarea
+    id: questions
+    attributes:
+      label: Questions (choice / score / noul)
+      description: Sketch the typed questions and the answer key.
+      render: json
+  - type: input
+    id: data
+    attributes:
+      label: Data source
+      description: Hand-written, or a public dataset (link + license)?

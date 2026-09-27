@@ -1,0 +1,29 @@
+name: Bug report
+description: Something is broken or behaving unexpectedly
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: "1. Enable Jev and Laya\n2. Open #battleground\n3. Press Start battle\n4. ..."
+    validations:
+      required: true
+  - type: dropdown
+    id: device
+    attributes:
+      label: Laya device
+      options: [mps (Apple GPU), cuda (NVIDIA), cpu, other]
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log lines
+      description: From arena.log or laya.log. Remove any API keys first.
+      render: text
